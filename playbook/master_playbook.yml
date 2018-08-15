@@ -1,0 +1,3 @@
+---
+- import_playbook: install-app1.yml
+- import_playbook: install-app2.yml 

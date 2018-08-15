@@ -1,0 +1,13 @@
+---
+- hosts : app_server
+  become: yes
+  tasks:
+    - name: install perl
+      yum: 
+        name: perl
+        state: latest
+
+    - name: un-install perl
+      yum: 
+        name: perl
+        state: absent
